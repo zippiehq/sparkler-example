@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "build": "cross-env DOCKER_BUILDKIT=1 docker build --no-cache -o out .",
-    "run": "cross-env MMDS_FILE=mmds.json node main.mjs",
+    "start": "cross-env MMDS_FILE=mmds.json node main.mjs",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
