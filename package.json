@@ -1,0 +1,29 @@
+{
+  "name": "sparkler-example",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "cross-env DOCKER_BUILDKIT=1 docker build --no-cache -o out .",
+    "run": "cross-env MMDS_FILE=mmds.json node main.mjs",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zippiehq/sparkler-example.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/zippiehq/sparkler-example/issues"
+  },
+  "homepage": "https://github.com/zippiehq/sparkler-example#readme",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "cross-env": "^7.0.2",
+    "express": "^4.17.1",
+    "express-promise-router": "^4.0.1",
+    "ioredis": "^4.17.3"
+  }
+}

@@ -1,0 +1,6 @@
+#!/bin/sh
+echo getting mmds
+wget --header="Accept: application/json" -qO /tmp/mmds.json http://169.254.169.254
+cd /app
+echo starting ..
+PORT=80 MMDS_FILE=/tmp/mmds.json node /app/main.mjs 
